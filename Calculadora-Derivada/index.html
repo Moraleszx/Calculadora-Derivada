@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Derivadas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Calculadora de Derivadas</h1>
+
+    <label>Tipo de função
+      <select id="tipo">
+        <option value="constante">Constante: f(x) = b</option>
+        <option value="afim">Afim: f(x) = ax + b</option>
+        <option value="linear">Linear: f(x) = ax</option>
+        <option value="quadratica">Quadrática: f(x) = ax² + bx + c</option>
+        <option value="modular">Modular: f(x) = |x|</option>
+      </select>
+    </label>
+
+    <label id="campo-a">a <input type="number" id="a" value="1" step="any"></label>
+    <label id="campo-b">b <input type="number" id="b" value="0" step="any"></label>
+    <label id="campo-c">c <input type="number" id="c" value="0" step="any"></label>
+    <label>Ponto x₀ <input type="number" id="x0" value="2" step="any"></label>
+
+    <button id="calcular">Calcular</button>
+
+    <section id="resultado"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
